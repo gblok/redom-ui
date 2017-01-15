@@ -5,6 +5,7 @@
   "main": "index.js",
   "private": true,
   "dependencies": {
+    "babel-polyfill":"",
     "import-dir": "",
     "koa": "^2.0.0-alpha.7",
     "koa-compose": "^3.2.1",

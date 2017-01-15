@@ -9,7 +9,7 @@ export default  {
     profile: true,
     cache: true,
     entry: {
-        vendor: ['redom'],
+        vendor: ['redom','babel-polyfill'],
     },
     output: {
         filename: '/assets/js/[name].js',
