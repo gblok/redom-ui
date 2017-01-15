@@ -1,0 +1,21 @@
+{
+  "apps": [
+    {
+      "cwd": "./",
+      "name": "redom-ui",
+      "script": "bin/server.js",
+      "watch": [
+        "server",
+        "shared"
+      ],
+      "ignoreWatch": ["[\\/\\\\]\\./", "node_modules"],
+      "merge_logs": true,
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "env_production" : {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

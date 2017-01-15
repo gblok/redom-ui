@@ -1,0 +1,24 @@
+{
+  "restartable": "rs",
+  "verbose": false,
+  "watchInterval": 10000,
+  "ignore": [
+    "static"
+  ],
+  "events": {
+    "restart": "Server restart..."
+  },
+  "watch": [
+    "server",
+    "shared",
+    "static/assets/js"
+  ],
+  "env": {
+    "NODE_ENV": "development",
+    "DEBUG":false
+  },
+  "ext": "js json pug",
+  "execMap": {
+    "js": "babel-node"
+  }
+}

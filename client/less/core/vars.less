@@ -1,0 +1,67 @@
+/*  Responsive
+-------------------------------------------------- */
+
+//@breakMobile: 40rem;
+//@breakTablet: 50rem;
+//@breakDesktop: 60rem;
+//@breakLarge: 70rem;
+//@breakWide: 120px;
+
+@breakMobile: 480px;
+@breakTablet: 768px;
+@breakDesktop: 992px;
+@breakLarge: 1300px;
+@breakWide: 1920px;
+
+@breakPureMax: (@breakMobile  - 1px);
+@breakMobileMax: (@breakTablet  - 1px);
+@breakTabletMax: (@breakDesktop - 1px);
+@breakDesktopMax: (@breakLarge   - 1px);
+@breakLargeMax: (@breakWide    - 1px);
+
+@maxWidth: 75rem;
+
+@pure: ~'only screen and (max-width: @{breakPureMax})';
+@mobile: ~'only screen and (min-width: @{breakMobile}) and (max-width: @{breakMobileMax})';
+@tablet: ~'only screen and (min-width: @{breakTablet}) and (max-width: @{breakTabletMax})';
+@desktop: ~'only screen and (min-width: @{breakDesktop}) and (max-width: @{breakDesktopMax})';
+@large: ~'only screen and (min-width: @{breakLarge}) and (max-width: @{breakLargeMax})';
+@wide: ~'only screen and (min-width: @{breakWide})';
+
+@alongMobile: ~'only screen and (max-width: @{breakMobileMax})';
+@alongTablet: ~'only screen and (max-width: @{breakTabletMax})';
+@alongDesktop: ~'only screen and (max-width: @{breakDesktopMax})';
+@alongLarge: ~'only screen and (max-width: @{breakLargeMax})';
+
+@largestPure: ~'only screen and (min-width: @{breakPureMax})';
+@largestMobile: ~'only screen and (min-width: @{breakTablet})';
+@largestTablet: ~'only screen and (min-width: @{breakDesktop})';
+@largestDesktop: ~'only screen and (min-width: @{breakLarge})';
+
+/*  Typography
+-------------------------------------------------- */
+
+// @import url('//fonts.googleapis.com/css?family=Roboto:300,400,500&subset=latin,latin-ext');
+// @import url('//fonts.googleapis.com/css?family=Roboto:300,400&subset=latin');
+@pageFont: Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+@monoFont: Monaco, Menlo, Consolas, 'Courier New', monospace;
+
+@headerFont: @pageFont;
+@formFont: @pageFont;
+@buttonFont: @pageFont;
+
+/*-------------------
+      Base Sizes
+--------------------*/
+
+//@pageBackground: #fbfbfb;
+@pageBackground: #EBEEF0;
+
+@textColor: #777;
+@fontSmoothing: antialiased;
+
+@fontSize: 14px;
+
+//GOLDEN RATIO   1.61803399
+@f: 1.61803399;
+@lineHeight: @f;

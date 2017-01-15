@@ -1,0 +1,16 @@
+.idea
+node_modules
+bower_components
+logs
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+coverage
+.lock-wscript
+.npm
+.node_repl_history
+stat.json
+zz
+assets

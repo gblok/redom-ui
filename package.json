@@ -1,0 +1,53 @@
+{
+  "name": "redom-ui",
+  "version": "0.0.1",
+  "description": "redom-ui",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "import-dir": "",
+    "koa": "^2.0.0-alpha.7",
+    "koa-compose": "^3.2.1",
+    "koa-compress": "^2.0.0",
+    "koa-etag": "^3.0.0",
+    "koa-favicon": "^2.0.0",
+    "koa-helmet": "",
+    "koa-logger": "^2.0.0",
+    "koa-router": "^7.0.1",
+    "koa-static": "^3.0.0",
+    "redom":""
+  },
+  "devDependencies": {
+    "babel-cli": "",
+    "babel-loader": "",
+    "babel-preset-env": "",
+    "file-loader": "",
+    "less": "",
+    "less-loader": "",
+    "less-plugin-autoprefix": "",
+    "less-plugin-clean-css": "",
+    "loader-utils": "^0.2.16",
+    "nodemon": "",
+    "pug": "",
+    "webpack": "^2.2.0-rc.4"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": true
+          },
+          "loose": true
+        }
+      ]
+    ]
+  },
+  "scripts": {
+    "prod": "pm2 start ./bin/pm2.json --env production",
+    "dev": "nodemon --config ./bin/nodemon.json ./server/index.js",
+    "client": "webpack --config ./bin/client.babel.js",
+    "dll": "webpack --config ./bin/client.dll.babel.js"
+  }
+}
